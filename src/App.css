@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  padding: 50px;
+}
+
+.todo-item {
+  max-width: 400px;
+  background-color: #c5ced7;
+  border-radius: 5px;
+  border: 1px solid #0808ad;
+  margin-bottom: 20px;
+}
