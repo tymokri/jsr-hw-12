@@ -29,7 +29,7 @@ class TodoBox extends React.Component {
 
     handleInputAdd = (event) => {
         event.preventDefault();
-        let arr = this.state.valueFromInput;
+        const arr = this.state.valueFromInput;
         arr.unshift(this.state.text);
 
         this.setState({
@@ -39,9 +39,8 @@ class TodoBox extends React.Component {
         });
     }
 
-    handleRemove = (event) => {
+    handleRemove = (index) => (event) => {
         event.preventDefault();
-        let index = event.target.dataset.key;
         let arr = this.state.valueFromInput;
         arr.splice(+(index),1);
 

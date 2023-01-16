@@ -17,12 +17,12 @@ class Item extends React.Component {
             <div>{
                 valueFromInput.map((item, index) => {
                     return (
-                        <div className="todo-item" key={uniqid()} data-key={index}>
+                        <div className="todo-item" key={uniqid()}>
                             <div className="row">
                                 <div className="col-auto">
                                     <button className={cn("btn", "btn-primary", "btn-sm")}
                                             type="button"
-                                            onClick={onRemove}>-</button>
+                                            onClick={onRemove(index)}>-</button>
                                 </div>
                                 <div className="col">{item}</div>
                             </div>
